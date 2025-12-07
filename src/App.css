@@ -1,0 +1,64 @@
+div#root {
+  height: 100%;
+  width: 100%;
+   max-height: 80vh;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.instruct {
+  text-align: center;
+}
+
+
+.main-container {
+  background: #ffff;
+  border: 1px solid #222423;
+  border-radius: 1rem;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.dices-wrap {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dice-elem {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 2px solid #2222;
+  border-radius: 10px;
+  padding: 1rem 1.3rem;
+  box-shadow: 0 4px 0 0 rgba(34, 36, 35, 0.3);
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+}
+
+.action-btn {
+  background: #222423;
+  color: #ffff;
+  border: 0;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+@media screen and (min-width:1080px) {
+  div#root {
+    max-width: 80vw;
+  max-height: 80vh;
+  }
+}

@@ -1,0 +1,23 @@
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bitcount Prop Single", system-ui;
+}
+
+body {
+  background: #222423;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+
+@media screen and (min-width:1080px) {
+  body {
+    padding: 3rem;
+  }
+}
