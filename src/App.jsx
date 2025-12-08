@@ -7,6 +7,7 @@ import { Dice } from "../components/Dice"
 
 function App() {
   let [diceNums, setDiceNums] = useState(() => allnewDice());
+  let [rollCount, setRollCount] = useState(0)
   const focusBtn = useRef(null);
   //let [currentTime, setCurrentTime] = useState(()=> newTime());
 
@@ -40,10 +41,16 @@ function App() {
   }
 
   function rollDice() {
-    gameWon ? setDiceNums(allnewDice) :
-    setDiceNums(oldDice => oldDice.map(die => {
-      return (die.isHeld) ? die : randomDice () 
-    }))
+    if(gameWon) {
+      setDiceNums(allnewDice);
+      setRollCount(0)
+    } else {
+      setDiceNums(oldDice => oldDice.map(die => {
+        return (die.isHeld) ? die : randomDice () 
+      }))
+      setRollCount(oldCount => oldCount + 1);
+
+    }
   }
 
   useEffect(() => {
@@ -97,8 +104,11 @@ function App() {
         {/* <div>
           Timer : {currentTime}
         </div> */}
+        <div>
+          Roll count = {rollCount}
+        </div>
        <div aria-label='polite'>
-            {gameWon ? <p>Congratulations! You have won the game. Press "New Game" to start new game.</p> : null}
+            {gameWon ? <p>Congratulations! You have won the game in {rollCount} rolls. Press "New Game" to start new game.</p> : null}
           </div>
      </div>
     </>
