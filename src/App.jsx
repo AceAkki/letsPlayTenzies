@@ -8,6 +8,7 @@ import { Dice } from "../components/Dice"
 function App() {
   let [diceNums, setDiceNums] = useState(() => allnewDice());
   const focusBtn = useRef(null);
+  //let [currentTime, setCurrentTime] = useState(()=> newTime());
 
   // if ((diceNums.filter(die => die.isHeld === false).length === 0 )) {
   //   console.log("game won")
@@ -51,6 +52,14 @@ function App() {
 
   }, [gameWon])
 
+  useEffect(() => {
+    
+  }, [])
+
+  // function newTime() {
+  //   return `${new Date().getMinutes().toString().padStart(2, '0')}: ${new Date().getSeconds().toString().padStart(2, '0')}`
+  // }
+
   function holdDie(id){ 
     // if (event.target.classList.contains("dice-elem")) {
     //   // setDiceNums(old => old.map(obj => {
@@ -84,6 +93,10 @@ function App() {
        <button onClick={rollDice} className='action-btn' ref={focusBtn}>
           {gameWon ? "New Game" : "Roll"}
         </button>
+
+        {/* <div>
+          Timer : {currentTime}
+        </div> */}
        <div aria-label='polite'>
             {gameWon ? <p>Congratulations! You have won the game. Press "New Game" to start new game.</p> : null}
           </div>
