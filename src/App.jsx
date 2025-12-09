@@ -108,7 +108,7 @@ function App() {
           Roll count = {rollCount}
         </div>
        <div aria-label='polite'>
-            {gameWon ? <p>Congratulations! You have won the game in {rollCount} rolls. Press "New Game" to start new game.</p> : null}
+            {gameWon ? <p>Congratulations! You have won the game in {rollCount} rolls. Press "New Game" to start a new game.</p> : null}
           </div>
      </div>
     </>
