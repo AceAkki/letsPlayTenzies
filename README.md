@@ -1,6 +1,6 @@
 # LetsPlayTenzies
 
-Welcome to **LetsPlayTenzies**! A simple, **minimalistic** dice game where you have to roll and match the dice to a specific value. It’s a fast-paced game that challenges your luck and skill, with no distractions—just pure gameplay!
+Welcome to **LetsPlayTenzies**! A simple, **minimalistic** dice game where you have to roll and match the dice to a specific value. It’s a fast-paced game that challenges your luck and skill, with no distraction. Just pure gameplay!
 
 ## Features
 - **Minimalistic Gameplay:** A straightforward, no-frills experience. Roll the dice and try to get all dice to the same value to win.
