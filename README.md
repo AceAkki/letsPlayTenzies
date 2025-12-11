@@ -1,16 +1,25 @@
-# React + Vite
+# LetsPlayTenzies
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **LetsPlayTenzies**! A simple, **minimalistic** dice game where you have to roll and match the dice to a specific value. It’s a fast-paced game that challenges your luck and skill, with no distractions—just pure gameplay!
 
-Currently, two official plugins are available:
+## Features
+- **Minimalistic Gameplay:** A straightforward, no-frills experience. Roll the dice and try to get all dice to the same value to win.
+- **Roll Tracker:** Tracks and displays how many rolls it took to complete the game.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to Play
+1. **Roll Dice:** Click the "Roll" button to roll the dice. Each time you roll, the dice will randomly show numbers from 1 to 6.
+2. **Lock Dice:** After each roll, select the dice that you want to keep and lock them in place.
+3. **Re-roll Unlocked Dice:** For the dice that are not locked, roll them again and try to match the locked dice.
+4. **Track Rolls:** The game will track and display how many rolls it takes to win.
+5. **Win the Game:** The game ends when all dice show the same value. The game will display how many rolls it took to win.
 
-## React Compiler
+## Game Instructions
+- **Start the Game:** Press the "Start Game" button to begin.
+- **Lock Dice:** Click on a die to lock it in place once you’ve matched your desired value.
+- **Track Rolls:** Each time you roll, the game will update the number of rolls you've made, helping you track your progress.
+- **Finish:** Once all dice are locked to the same value, you win! The game will show how many rolls it took.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+- **React.js:** For building the user interface.
+- **CSS:** For styling the game components.
+- **State Management:** Tracks game progress, rolls, and dice state.
